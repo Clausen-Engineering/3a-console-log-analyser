@@ -8,10 +8,8 @@ import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
 
-// Get the base path for GitHub Pages
-const basename = import.meta.env.MODE === 'production' 
-  ? '/3a-console-log-analyzer' 
-  : '';
+// Use the actual BASE_URL from Vite config instead of MODE
+const basename = import.meta.env.BASE_URL !== '/' ? import.meta.env.BASE_URL.replace(/\/$/, '') : '';
 
 const App = () => (
   <QueryClientProvider client={queryClient}>

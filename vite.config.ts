@@ -3,7 +3,6 @@ import react from "@vitejs/plugin-react-swc";
 import path from "path";
 import { componentTagger } from "lovable-tagger";
 
-// https://vitejs.dev/config/
 export default defineConfig(({ command, mode }) => {
   const config = {
     server: {
@@ -21,9 +20,10 @@ export default defineConfig(({ command, mode }) => {
     },
   };
 
-  // Set base path for GitHub Pages when building for production
-  if (command === 'build' && mode !== 'development') {
-    config.base = '/3a-console-log-analyzer/';
+  if (command === 'build') {
+    // Only use GitHub Pages base for explicit GitHub builds
+    const isGitHubBuild = process.env.GITHUB_PAGES === 'true';
+    config.base = isGitHubBuild ? '/3a-console-log-analyzer/' : '/';
   }
 
   return config;
