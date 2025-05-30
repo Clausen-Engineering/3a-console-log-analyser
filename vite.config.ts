@@ -21,9 +21,9 @@ export default defineConfig(({ command, mode }) => {
   };
 
   if (command === 'build') {
-    // Only use GitHub Pages base for explicit GitHub builds
+    // Use the correct repository name (British spelling)
     const isGitHubBuild = process.env.GITHUB_PAGES === 'true';
-    config.base = isGitHubBuild ? '/3a-console-log-analyzer/' : '/';
+    config.base = isGitHubBuild ? '/3a-console-log-analyser/' : '/';
   }
 
   return config;
