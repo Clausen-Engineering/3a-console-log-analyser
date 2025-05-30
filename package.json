@@ -1,9 +1,9 @@
 {
-  "name": "3a-console-log-analyzer",
+  "name": "3a-console-log-analyser",
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://clausen-engineering.github.io/3a-console-log-analyzer",
+  "homepage": "https://clausen-engineering.github.io/3a-console-log-analyser",
     "scripts": {
     "build": "vite build",
     "build:github": "cross-env GITHUB_PAGES=true vite build",
