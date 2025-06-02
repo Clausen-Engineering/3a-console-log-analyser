@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "homepage": "https://clausen-engineering.github.io/3a-console-log-analyser",
-    "scripts": {
+  "scripts": {
     "build": "vite build",
     "build:github": "cross-env GITHUB_PAGES=true vite build",
     "serve": "serve -s dist -p 3000",
