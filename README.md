@@ -74,6 +74,12 @@ This project can be deployed to any static hosting service. The built files are 
 npm run build
 ```
 
+## Contributing
+
+This project was built with [Lovable](https://lovable.dev), an AI-powered web development platform. You can continue development either:
+- Using the Lovable editor at: https://lovable.dev/projects/eb275216-2e90-4554-8c01-9fb958b3e8af
+- Locally using your preferred IDE (changes sync automatically with Lovable)
+
 ## License
 
 This project is open source and available under the MIT License.
