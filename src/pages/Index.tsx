@@ -482,7 +482,7 @@ const Index = () => {
               <TrendingUp className="h-8 w-8 text-white" />
             </div>
             <h1 className="text-4xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent leading-tight py-1">
-              Log Data Analyser
+              Log Data Analyzer
             </h1>
           </div>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
